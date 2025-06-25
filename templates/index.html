@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+      </ul>
+    </nav>
+  </header><!-- End Header -->
+
+  <main class="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero section light-background">
+      <img src="{{ url_for('static', filename='assets/img/hero-bg.jpg') }}" alt="" class="hero-bg">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 text-center">
+            <h2>Fahriansyah putra</h2>
+            <p>I'm <span class="typed" data-typed-items="Gamer, Freelancer, Photographer"></span></p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 text-center">
+            <img src="{{ url_for('static', filename='assets/img/profile-img.jpg') }}" class="img-fluid profile-img" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Abstract Artist</h2>
+            <p class="fst-italic py-3">
+              Victory is not always winning the battle, but rising every time you fall. 
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>09 April 2005</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62821-1389-6151</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+            'Hai nama saya Fahriansyah Putra Mahasiswa Universitas Bale Bandung, saya adalah seorang Mahasiswa yang memiliki ketertarikan dalam bidang Photographer, Gamer, dan Freelancer. Saya percaya bahwa setiap momen berharga harus diabadikan dengan baik, dan saya berusaha untuk menangkap keindahan dalam setiap foto yang saya ambil. Selain itu, saya juga aktif sebagai gamer dan freelancer, yang memungkinkan saya untuk terus belajar dan berkembang dalam berbagai bidang. Saya selalu terbuka untuk peluang baru dan tantangan yang dapat meningkatkan keterampilan saya dan memperluas wawasan saya. Saya percaya bahwa dengan kerja keras, dedikasi, dan semangat yang tinggi, saya dapat mencapai tujuan saya dan memberikan kontribusi positif bagi masyarakat. Jika Anda tertarik untuk bekerja sama atau ingin tahu lebih banyak tentang saya, jangan ragu untuk menghubungi saya melalui kontak yang tersedia. Terima kasih atas perhatian Anda.'
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Victory is earned, not given.</p>
+        </div>
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">B/W</li>
+            <li data-filter=".filter-product">R/B/W</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            
+            <!-- Portfolio Item 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>B/W</h4>
+                <p>Star but failed to shine</p>
+                <a href="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ url_for('portfolio_detail', id=1) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Portfolio Item 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R/B/W</h4>
+                <p>Rose that bloom in crisis</p>
+                <a href="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ url_for('portfolio_detail', id=2) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <!-- Portfolio Item 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}" class="img-fluid" alt="" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+              <div class="portfolio-info">
+                <h4>R/B/W</h4>
+                <p>Rose that bloom in crisis</p>
+                <a href="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ url_for('portfolio_detail', id=3) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Portfolio Item 4 (Placeholder) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-4.png') }}" class="img-fluid" alt="Placeholder 1" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+              <div class="portfolio-info">
+                <h4>Placeholder 1</h4>
+                <p>Deskripsi singkat gambar placeholder 1</p>
+                <a href="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-4.png') }}" title="Placeholder 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Portfolio Item 5 (Placeholder) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}" class="img-fluid" alt="Placeholder 2" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+              <div class="portfolio-info">
+                <h4>Placeholder 2</h4>
+                <p>Deskripsi singkat gambar placeholder 2</p>
+                <a href="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}" title="Placeholder 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Portfolio Item 6 (Placeholder) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-6.png') }}" class="img-fluid" alt="Placeholder 3" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+              <div class="portfolio-info">
+                <h4>Placeholder 3</h4>
+                <p>Deskripsi singkat gambar placeholder 3</p>
+                <a href="{{ url_for('static', filename='assets/img/masonry-portfolio/masonry-portfolio-6.png') }}" title="Placeholder 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+          </div><!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">Fahriansyah Putra</h3>
+        <p>Play hard, win harder.</p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="copyright text-center">
+        &copy; Copyright <strong><span>Fahriansyah Putra</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits text-center">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/typed.js/typed.umd.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>
